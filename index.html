@@ -120,12 +120,19 @@
                 <span class="icon-attach me-2"></span
                 ><span>Connect With Us</span></a
               >
-              <a
-                href="https://youtu.be/xBXHFLcFSX4"
-                class="text-white glightbox d-inline-flex align-items-center"
-                ><span class="icon-play me-2"></span
-                ><span>Watch the video</span></a
-              >
+           <a href="https://youtu.be/xBXHFLcFSX4"
+              class="text-white glightbox d-inline-flex align-items-center"
+              id="videoLink">
+              <span class="icon-play me-2"></span>
+              <span>Watch the video</span>
+           </a>
+           
+           <script>
+             document.getElementById("videoLink").addEventListener("click", function(event) {
+               event.preventDefault(); // Prevent the default behavior of the link
+               window.open(this.href, "_blank"); // Open the link in a new tab
+             });
+           </script>
             </p>
           </div>
 
